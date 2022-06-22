@@ -47,3 +47,8 @@ h1 {
     text-fill-color: transparent;
     color: transparent;
 }
+
+[type="chekbox"]:checked,[type="chekbox"]:not(:checked) {
+    position:absolute;
+    left: -9999px;
+}
