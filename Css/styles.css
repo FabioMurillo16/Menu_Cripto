@@ -48,8 +48,8 @@ h1 {
     color: transparent;
 }
 
-[type="chekbox"]:checked,
-[type="chekbox"]:not(:checked) {
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
     position:absolute;
     left: -9999px;
 }
@@ -252,6 +252,15 @@ h1 {
 
 .nav ul li a:hover:after {
     width: 100%;
+}
+
+.menu-icon:checked ~ .nav ul li {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 350ms ease, 
+                transform 250ms ease;
 }
 
 .menu-icon:checked ~ .nav ul li:nth-child(1) {
